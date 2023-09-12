@@ -1,0 +1,23 @@
+.debug {
+    border: 1px solid red;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: auto;
+    height: 40px;
+}
+
+header > nav {
+    display: flex;
+    column-gap:50px;
+}
