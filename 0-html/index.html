@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags are meant for browsers and search engines -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Can be seen in browser tabs -->
+        <title>HTML Basics</title>
+
+        <!-- Skip this -->
+        <style>
+            .debug {
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+
+    <!-- All the visible content inside body tag  -->
+    <body>
+        <!-- There are no errors in html -->
+
+        <!-- Html tag structure: <tagname>content...</tagname>, here the tagname must be a valid html tag such as p, div, a, section, ul, etc -->
+
+        <!-- Some html tags might not have closing tag such as <br>, <img>, <input> unlike <p>...</p>, <div>...</div> -->
+
+        <!-- We can add additional context/information in tag using attributes. <div id="featured-product" class="product-container>, here id and class are attributes which have values: featured-product and product-container. It is important to remember that id in the whole webpage, meaning there can't be multiple tags with same id. But class can be repeated." -->
+
+        <!-- Headings, from h1 to h6 only -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <!-- Heading end -->
+
+        <!-- you cannot add line break in html by hitting enter so  <br> tag is used to add line break -->
+        <!-- Html truncated multiple spaces to single, so no matter how many spaces are there between text, only one space will be visible in browser -->
+
+        <!-- Text formatting -->
+        <!-- make text bold -->
+        <b>b tag makes text bold</b><br />
+        <strong>strong tag also makes text bold</strong><br /><br />
+
+        <!-- make text italic -->
+        <i>i tag makes text slant/italic</i><br />
+        <em>em tag makes text slant/italic</em><br /><br />
+
+        <!-- highlight text -->
+        <mark>mark tag is used to highlight text</mark><br /><br />
+
+        <!-- Small text -->
+        <small>small tag is used to make text small</small><br /><br />
+
+        <!-- strike text -->
+        <del>del tag is used to make striked text</del><br /><br />
+
+        <!-- underline text -->
+        <ins>ins tag is used to add underline</ins><br /><br />
+
+        <!-- Some math/science stuff -->
+        <p>H<sub>2</sub>O</p>
+        <p>2<sup>2</sup> = 4</p>
+
+        <!-- Ordered List -->
+        <ol>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ol>
+
+        <!-- Ordered List -->
+        <ul>
+            <li>Apple</li>
+            <li>Ball</li>
+            <li>Cat</li>
+        </ul>
+
+        <!-- Definition list -->
+        <dl>
+            <dt>Apple</dt>
+            <dd>Apple is a fruit</dd>
+            <dt>Ball</dt>
+            <dd>Ball is a toy</dd>
+        </dl>
+        <br />
+
+        <!-- HTML table -->
+
+        <table>
+            <!-- tr is used for row -->
+            <tr>
+                <!-- th is used to add cell but also makes the font size bolder -->
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <!-- td is used to add cell -->
+                <td>Rakesh</td>
+                <td>Csit</td>
+            </tr>
+            <tr>
+                <!-- td is used to add cell -->
+                <td>Andrew</td>
+                <td>BCA</td>
+            </tr>
+        </table>
+        <br />
+
+        <!-- add images in webpage -->
+        <img
+            src="https://images.pexels.com/photos/10991724/pexels-photo-10991724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+            height="200"
+            width="200"
+        /><br /><br />
+
+        <!-- link -->
+        <a href="https://www.google.com">Click me to go to google</a><br />
+        <a href="https://www.google.com" target="_blank"
+            >Click me to go to google in new tab</a
+        ><br />
+        <a href="mailto:email@email.com">Click to send email</a><br />
+        <a href="tel:98000000">Click to call</a><br /><br />
+
+        <!-- iframe to embed another website -->
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/brc-bYfdjgM?si=RBJ7bbHWTZ4Mnd8o"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+        ></iframe>
+
+        <!-- Block elements -->
+        <div class="debug">
+            I am block element, I take full row space and can take vertical
+            space as well
+        </div>
+        <br />
+
+        <!-- Inline elements -->
+        <span class="debug"
+            >I am inline element, I can take space only in x direction</span
+        ><br /><br />
+
+        <!-- Inline block elements -->
+        <span style="display: inline-block" class="debug"
+            >I am inline-block element (using css), I am like inline element but
+            can take vertical space if required</span
+        ><br /><br />
+
+        <!-- video element -->
+        <video
+            src="https://file-examples.com/storage/fec36b918d65009119ed030/2017/04/file_example_MP4_480_1_5MG.mp4"
+            height="400"
+            controls
+        ></video
+        ><br />
+
+        <!-- audio element -->
+        <audio controls>
+            <source
+                src="https://file-examples.com/storage/fec36b918d65009119ed030/2017/11/file_example_MP3_700KB.mp3"
+            />
+        </audio>
+
+        <!-- We can build almost anywebsite using only div, image, audio, video tag only but we html specifies some explicit tags which are self explanatory such as: <section> <aside> <article> <header> <footer>  <nav> <main>, .... Although their behaviour are same as div, it is advised to semantic tags if possible. -->
+    </body>
+</html>
