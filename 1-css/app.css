@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding: 10px;
+}
+
+.product {
+    max-width: 300px;
+}
+
+.product img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    object-position: cover;
+    border-radius: 3px;
+}
+
+.product-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-description {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #604646;
+}
